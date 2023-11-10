@@ -100,3 +100,29 @@ header nav ul li a:hover{
         cursor: pointer;
     }
 }
+
+
+/* This is for footer section */
+
+footer{
+    width: 100%;
+    min-height: 100px;
+    background-color: #0ecabb;
+    text-align: center;
+    padding: 20px;
+    font-weight: bold;
+    color: #fff;
+}
+
+footer h3{
+    animation: footer-corusel 5s linear infinite;
+}
+
+@keyframes footer-corusel {
+    from {
+        transform: translateY(-50%);
+    }
+    to {
+        transform: translateY(50%);
+    }
+}

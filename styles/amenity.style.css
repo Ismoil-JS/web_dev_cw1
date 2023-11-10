@@ -1,0 +1,79 @@
+main{
+    height: 100%;
+}
+
+/* Amenities Section */
+.amenities {
+    padding: 0 0 20px 0; /* Adjust padding based on percentage */
+    background-color: #f5f5f5;
+}
+
+.amenities__container {
+    max-width: 80%; /* Use a percentage for max-width */
+    margin: 0 auto;
+    padding: 0px;
+    height: auto;
+}
+
+.amenities__title {
+    padding-top: 20px;
+    text-align: center;
+    margin-bottom: 3%; /* Adjust margin based on percentage */
+}
+
+.amenities__title h1 {
+    margin: 0;
+    font-size: 2em;
+    color: #333;
+}
+
+.amenities__content {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Responsive grid columns */
+    grid-gap: 20px; /* Adjust grid gap based on percentage */
+    justify-items: center;
+}
+
+.amenities__content__item {
+    height: auto;
+    width: 100%; /* Full width for responsiveness */
+    max-width: 300px; /* Limit maximum width */
+    margin: 3%; /* Adjust margin based on percentage */
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.amenities__content__item:hover {
+    transform: scale(1.05);
+}
+
+.amenities__content__item__img{
+    height: 55%;
+    max-width: 100%;
+    margin: 0;
+    border-radius: 5px 5px 0 0;
+}
+
+.amenities__content__item__img img {
+    width: 100%;
+    aspect-ratio: 1.2/1;
+    object-fit: cover;
+    border-radius: 5px 5px 0 0;
+}
+
+.amenities__content__item__text {
+    padding: 3%; /* Adjust padding based on percentage */
+    text-align: center;
+}
+
+.amenities__content__item__text h2 {
+    font-size: 1.5em;
+    margin-bottom: 2%; /* Adjust margin based on percentage */
+    color: #333;
+}
+
+.amenities__content__item__text p {
+    font-size: 1em;
+    color: #666;
+}

@@ -73,6 +73,19 @@ hr{
     margin: 1rem 0;
 }
 
+#no-room{
+   animation: noRoom 1s linear  infinite alternate;
+}
+
+@keyframes noRoom {
+    0% {
+        opacity: .2;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
 @media screen and (max-width: 678px) {
     .title{
         font-size: 1.2rem;

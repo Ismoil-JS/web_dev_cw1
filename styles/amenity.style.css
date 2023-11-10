@@ -1,11 +1,19 @@
-main{
-    height: 100%;
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main, .amenities {
+    flex: 1;
 }
 
 /* Amenities Section */
 .amenities {
+    min-height: auto;
     padding: 0 0 20px 0; /* Adjust padding based on percentage */
     background-color: #f5f5f5;
+    object-fit: cover;
 }
 
 .amenities__container {

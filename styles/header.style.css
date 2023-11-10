@@ -35,6 +35,34 @@ header nav ul li a:hover{
     display: none;
 }
 
+.sidebar-menu{
+    display: none;
+    position: absolute;
+    top: 90px;
+    right: 10px;
+    background-color: #0ecaba9f;
+    z-index: 1;
+    padding: 10px;
+}
+
+.sidebar-menu ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px;
+}
+
+.sidebar-menu ul li a{
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.active{
+    display: block;
+}
+
 
 /* Media queries */
 

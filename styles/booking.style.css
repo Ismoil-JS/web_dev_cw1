@@ -1,0 +1,55 @@
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 30px 0;
+    gap: 30px;
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    border-radius: 15px;
+    background-color: rgba(225, 223, 223, 0.089);
+    box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.75);
+    padding: 20px;
+}
+
+section h3 {
+    font-size: 2rem;
+    font-weight: 500;
+    color: #000000be;
+    margin: 0;
+    margin-top: 20px;
+}
+
+section p {
+    color: #000000be;
+    margin: 0;
+    margin-top: 20px;
+    text-align: center;
+}
+
+section > p > a {
+    text-decoration: none;
+    margin: 0;
+}
+
+section > p > a:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+    section {
+        width: 90%;
+    }
+    
+    section h3 {
+        font-size: 1.5rem;
+    }
+}

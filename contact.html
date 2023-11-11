@@ -36,10 +36,81 @@
             </ul>
         </div>
     </header>
-    <h1>Contact Us</h1>
+    
+     <!-- Main content -->
+     <main>
+        <form id="contactForm" novalidate>
+            <legend>This form stands for leaving your info for university staffs to contact with you. After submit, your 
+                info will be displayed in the table below.
+            </legend>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
 
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required>
 
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <button type="button" onclick="submitForm()">Submit</button>
+        </form>
+
+        <!-- Display Table -->
+        <table id="contactTable">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Phone Number</th>
+                    <th>Email</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Submitted data will be displayed here -->
+            </tbody>
+        </table>
+
+        <article>
+            <h3>Our social media</h3>
+            <div class="socials">
+                <div class="social-item">
+                    <a href="https://www.facebook.com/"><i class="fab fa-facebook"></i></a>
+                    <p>Facebook</p>
+                </div>
+                <div class="social-item">
+                    <a href="https://www.facebook.com/"><i class="fab fa-instagram"></i></a>
+                    <p>Facebook</p>
+                </div>
+                <div class="social-item">
+                    <a href="https://www.facebook.com/"><i class="fab fa-linkedin"></i></a>
+                    <p>Facebook</p>
+                </div>
+                <div class="social-item">
+                    <a href="https://www.facebook.com/"><i class="fab fa-youtube"></i></a>
+                    <p>Facebook</p>
+                </div>
+                <div class="social-item">
+                    <a href="https://www.facebook.com/"><i class="fab fa-telegram"></i></a>
+                    <p>Facebook</p>
+                </div>
+            </div>
+        </article>
+
+        <div class="contact">
+            <h3>Or You can contact with us</h3>
+            <div class="contact-item">
+                <p><b>Phone: </b> <a href="tel: +998 71 291 23 19">+998 71 291 23 19</a> </p>
+                <p><b>Email: </b> <a href="mailto: accommodation@wiut.uz">accommodation@wiut.uz</a> </p>
+                <p><b>Address: </b> 1A Yangi Zamon Street</p>
+        </div>
+        
+    </main>
+
+    <footer>
+        <h3>“This website was created to fulfill Web Technology
+            module’s requirements and does not represent an actual company or service”.</h3>
+    </footer>
 
     <script src="./js/header.js"></script>
+    <script src="./js/contact.js"></script>
 </body>
 </html>

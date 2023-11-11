@@ -1,0 +1,162 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+main {
+    width: 100%;
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 20px 0;
+}
+
+form {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px ;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+legend{
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+}
+
+table {
+    width: calc(100% - 40px);
+    margin: 20px;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+button {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+article{
+    width: 100%;
+    padding: 20px 0;
+    background-color: #fff;
+    overflow: hidden !important;
+}
+
+article h3{
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 20px;
+    padding: 0;
+}
+
+.socials {
+    width: 150%;
+    background-color: #c3161670;
+    padding: 20px;
+    display: flex;
+    gap: 20px;
+    animation: carousel-social 10s linear infinite;
+}
+
+@keyframes carousel-social {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-32%);
+    }
+}
+
+.social-item{
+    width: 30%;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+}
+
+.social-item p, .social-item a{
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.contact{
+    width: 100%;
+    background-color: #fff;
+}
+
+.contact h3{
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0;
+    margin-left: 20px;
+    padding: 0;
+}
+
+.contact-item{
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+}
+
+.contact-item p, .contact-item a{
+    margin: 0;
+    padding: 0;
+}
+
+.contact-item a{
+    text-decoration: none;
+}
+
+
+/* Media section */
+
+@media screen and (max-width: 768px) {
+    .contact-item{
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+
+
+@media screen and (max-width: 600px) {
+    th:nth-child(3), td:nth-child(3) {
+        display: none;
+    }
+}

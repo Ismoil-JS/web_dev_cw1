@@ -38,18 +38,23 @@ header nav ul li a:hover{
 .sidebar-menu{
     display: none;
     position: absolute;
-    top: 90px;
+    top: 130px;
     right: 10px;
-    background-color: #0ecaba9f;
+    height: 30vh;
+    width: 60vw;
+    background-color: #0ecabaf5;
     z-index: 1;
     padding: 10px;
 }
 
 .sidebar-menu ul {
+    width: 100%;
+    height: calc(100% - 40px);
     list-style-type: none;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    justify-content: space-between;
     padding: 10px;
 }
 
